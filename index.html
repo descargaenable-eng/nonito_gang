@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda con TarjetaProducto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi Tienda Front-end</h1>
+      <span id="contador">Carrito: 0 producto(s) — Total: $ 0</span>
+    </header>
+
+    <main>
+      <p id="mensaje"></p>
+
+      <section class="catalogo">
+        <!-- El mismo componente reutilizado 3 veces con datos distintos -->
+        <tarjeta-producto
+          imagen="assets/laptop.svg"
+          titulo="Portátil Pro 14"
+          descripcion="Procesador de última generación, 16 GB de RAM y SSD de 512 GB."
+          precio="3200000"
+        ></tarjeta-producto>
+
+        <tarjeta-producto
+          imagen="assets/audifonos.svg"
+          titulo="Audífonos Inalámbricos"
+          descripcion="Cancelación de ruido y hasta 30 horas de batería."
+          precio="280000"
+        ></tarjeta-producto>
+
+        <tarjeta-producto
+          imagen="assets/teclado.svg"
+          titulo="Teclado Mecánico"
+          descripcion="Switches azules, retroiluminación RGB y diseño compacto."
+          precio="190000"
+        ></tarjeta-producto>
+      </section>
+    </main>
+
+    <footer>Primer parcial — Desarrollo de Aplicaciones Web y Sistemas Operativos</footer>
+
+    <script src="js/tarjeta-producto.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
